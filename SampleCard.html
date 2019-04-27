@@ -1,0 +1,593 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+<header id="header">
+    <button type="button"><svg><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></button>
+    <div id="barrier"></div>
+    <a><svg><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"></path></svg></a>
+    <a><svg><path d="M17.66 7.93L12 2.27 6.34 7.93c-3.12 3.12-3.12 8.19 0 11.31C7.9 20.8 9.95 21.58 12 21.58c2.05 0 4.1-.78 5.66-2.34 3.12-3.12 3.12-8.19 0-11.31zM12 19.59c-1.6 0-3.11-.62-4.24-1.76C6.62 16.69 6 15.19 6 13.59s.62-3.11 1.76-4.24L12 5.1v14.49z"></path></svg></a>
+    <a><svg><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6C7.8 12.16 7 10.63 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z"></path></svg></a>
+    <a><svg><path d="M10 10v5h2V4h2v11h2V4h2V2h-8C7.79 2 6 3.79 6 6s1.79 4 4 4zm-2 7v-3l-4 4 4 4v-3h12v-2H8z"></path></svg></a>
+    <a><svg><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></a>
+</header>
+<aside>
+    <div id="webname">ChemData</div>
+    <ul id="menulist">
+        <li><a href="#">list1</a></li>
+        <li><a href="#">list2</a></li>
+        <li><a href="#">list3</a></li>
+        <li><a href="#">list4</a></li>
+    </ul>
+</aside>
+<div id="content">
+    <div id="contentsvg"><svg><path d="m29.6455,72.48438c0,1 0,8 0,13c0,3 0.43425,11.04816 -1,22c-4.6111,35.20992 -10.49622,48.84016 -12,70c-1.13422,15.95975 -1,40 -1,51c0,11 -0.6547,25.03583 0,31c1.00601,9.16449 1.82108,13.29871 5,15c0.88168,0.47186 2,0 3,0c1,0 3,-1 12,-10c7,-7 16.12862,-15.77609 18,-17c19.60931,-12.82478 22.54749,-35.32957 33,-31c1.84776,0.76537 0.06081,6.02475 -2,11c-2.91443,7.03606 -9.72018,21.82625 -13,37c-1.28511,5.94547 -2.37852,12.16049 -1,18c0.51374,2.17624 3.82375,5.48627 6,6c1.9465,0.4595 5.46592,0.82056 13,-4c5.39358,-3.45099 22.56126,-22.32193 30,-32c15.1373,-19.69421 17.65625,-33.65881 25,-31c0.94028,0.34042 -0.06541,3.97899 -1,7c-4.30319,13.90981 -7,28 -7,32c0,6 -1.05147,7.29871 0,9c1.17557,1.9021 3.06456,1.8009 8,1c3.12144,-0.50653 21.95464,-13.95465 33,-25c33.13608,-33.13608 54.48636,-60.90607 81,-109c12.74588,-23.12017 21.76324,-64.05283 25,-78c3.72836,-16.06547 7,-23 4,-23c-4,0 1.35007,11.18995 -1,23c-5.12274,25.74407 -15.85037,39.69388 -27,72c-6.50031,18.8347 -15.49582,61.83226 -17,82c-1.85941,24.93076 3.38483,84.47116 12,111c9.29178,28.61227 13.43967,35.43625 19,42c0.91412,1.07907 6.19028,-0.88153 8,-4c1.12234,-1.93399 13.1691,-20.86591 29,-41c17.18478,-21.85599 34.85428,-59.97122 35,-77c0.20554,-24.01994 -4.60641,-32.54901 -10,-36c-1.88351,-1.20514 -8.74182,-1.64517 -13,4c-6.19998,8.2195 -17.18185,33.94724 -20,44c-6.41614,22.88739 -4.11557,42.81671 2,50c6.89099,8.09409 28,15 52,21l69,5l39,2l100,-13" id="svg_1" stroke-width="1.5" stroke="#000" fill="#A0D58A" /></svg></div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">No.</th>
+                <th scope="col">Perovskite Cells</th>
+                <th scope="col">Area<br />(cm2)</th>
+                <th scope="col">Jsc<br />(mA/cm2)</th>
+                <th scope="col">Voc<br />(V)</th>
+                <th scope="col">FF</th>
+                <th scope="col">PCE<br />(%)</th>
+                <th scope="col">Journal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td><a href="#">Au/Spiro-OMeTAD/CH3NH3PbI3/mpTiO2/cpTiO2/FTO</a></td>
+                <td>0.016</td>
+                <td>16.1</td>
+                <td>0.89</td>
+                <td>0.58</td>
+                <td>12.1</td>
+                <td>Nat. Photo. 21. 123. 2015.</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td><a href="#">Au/Spiro-OMeTAD/CH3NH3PbI3/mpTiO2/cpTiO2/FTO</a></td>
+                <td>0.016</td>
+                <td>16.1</td>
+                <td>0.89</td>
+                <td>0.58</td>
+                <td>12.1</td>
+                <td>Nat. Photo. 21. 123. 2015.</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td><a href="#">Au/Spiro-OMeTAD/CH3NH3PbI3/mpTiO2/cpTiO2/FTO</a></td>
+                <td>0.016</td>
+                <td>16.1</td>
+                <td>0.89</td>
+                <td>0.58</td>
+                <td>12.1</td>
+                <td>Nat. Photo. 21. 123. 2015.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div id="cardcontainer">
+    <div id="background"></div>
+    <div id="cards">
+
+        <div class="card-repeat">
+            <div class="card-title">Metal Layer</div>
+            <div class="card-context">
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Material</div>
+                    <div class="card-context-repeat-property">Au</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Thickness</div>
+                    <div class="card-context-repeat-property">0.06μm</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-repeat">
+            <div class="card-title">HTM Layer</div>
+            <div class="card-context">
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Material</div>
+                    <div class="card-context-repeat-property">Sprio-OMeTAD</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">HOMO</div>
+                    <div class="card-context-repeat-property">-5.36eV</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Thickness</div>
+                    <div class="card-context-repeat-property">0.12μm</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Additive</div>
+                    <div class="card-context-repeat-property">LiTFSI</div>
+                    <div class="card-context-repeat-property">TBP</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Solvent</div>
+                    <div class="card-context-repeat-property">Chlorobenzene</div>
+                    <div class="card-context-repeat-property">Acetonitrile</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-repeat">
+            <div class="card-title">Perovskite Layer</div>
+            <div class="card-context">
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Material</div>
+                    <div class="card-context-repeat-property">CH3NH3PbI3</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">HOMO</div>
+                    <div class="card-context-repeat-property">-3.93eV</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">LUMO</div>
+                    <div class="card-context-repeat-property">-5.43eV</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Bandgap</div>
+                    <div class="card-context-repeat-property">1.5eV</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Shape</div>
+                    <div class="card-context-repeat-property">Cubic</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">abc</div>
+                    <div class="card-context-repeat-property">8.722Å*8.722Å*8.722Å</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-repeat">
+            <div class="card-title">Perovskite Layer Method</div>
+            <div class="card-context">
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Method</div>
+                    <div class="card-context-repeat-property">One Step Spin Coating</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Precursor1</div>
+                    <div class="card-context-repeat-property">CH3NH3I</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Precursor2</div>
+                    <div class="card-context-repeat-property">PbI2</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Mol Ratio</div>
+                    <div class="card-context-repeat-property">1:1</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">wt%</div>
+                    <div class="card-context-repeat-property">40</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Solvent</div>
+                    <div class="card-context-repeat-property">γ-butyrolactone</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Heating/Annealling Time</div>
+                    <div class="card-context-repeat-property">15min</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Heating/Anealling Temperature</div>
+                    <div class="card-context-repeat-property">100℃</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-repeat">
+            <div class="card-title">ETL Layer</div>
+            <div class="card-context">
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Material</div>
+                    <div class="card-context-repeat-property">mpTiO2</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Thickness</div>
+                    <div class="card-context-repeat-property">0.06μm</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Heating/Annealling Time</div>
+                    <div class="card-context-repeat-property">30min</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Heating/Anealling Temperature</div>
+                    <div class="card-context-repeat-property">500℃</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-repeat">
+            <div class="card-title">Dense Layer</div>
+            <div class="card-context">
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Material</div>
+                    <div class="card-context-repeat-property">cpTiO2</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Thickness</div>
+                    <div class="card-context-repeat-property">0.06μm</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Heating/Annealling Time</div>
+                    <div class="card-context-repeat-property">15min</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Heating/Anealling Temperature</div>
+                    <div class="card-context-repeat-property">500℃</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Glass</div>
+                    <div class="card-context-repeat-property">FTO</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-repeat">
+            <div class="card-title">Performance</div>
+            <div class="card-context">
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Jsc</div>
+                    <div class="card-context-repeat-property">17.0mA/cm2</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Voc</div>
+                    <div class="card-context-repeat-property">0.888V</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">FF</div>
+                    <div class="card-context-repeat-property">62%</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">PCE</div>
+                    <div class="card-context-repeat-property">9.7%</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Best PCE</div>
+                    <div class="card-context-repeat-property">10.1%</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Area</div>
+                    <div class="card-context-repeat-property">0.207cm2</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-repeat">
+            <div class="card-title">Stability</div>
+            <div class="card-context">
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Stable Time</div>
+                    <div class="card-context-repeat-property">500hour</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Retained PCE Percent</div>
+                    <div class="card-context-repeat-property">80%</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Atomphere</div>
+                    <div class="card-context-repeat-property">air</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Encapsulate</div>
+                    <div class="card-context-repeat-property">no</div>
+                </div>
+                <div class="card-context-repeat">
+                    <div class="card-context-repeat-property-name">Stability Temperature</div>
+                    <div class="card-context-repeat-property">room</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    /*for all reset*/
+    * {
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+        box-sizing: inherit;
+    }
+
+    body, html {
+        font-family: 'Times New Roman', 'Times New Roman', Times, serif;
+        font-size: 1.12em;
+    }
+
+    body, html {
+        height: 100%;
+        width: 100%;
+    }
+    /*main*/
+    #header {
+        position: fixed;
+        height: 60px;
+        right: 0px;
+        left: 0px;
+        display: flex;
+        flex-shrink: 0;
+        transition: width 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        transition-property: width;
+        transition-duration: 300ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0ms;
+        z-index: 10;
+        box-sizing: border-box;
+        color: #fff;
+        background-color: #2196f3;
+        box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+        align-items: center;
+        padding: 12px;
+    }
+
+        #header button, #header a {
+            color: inherit;
+            flex: 0 0 auto;
+            font-size: 24px;
+            text-align: center;
+            width: 48px;
+            height: 48px;
+            padding: 12px;
+            background-color: #2196f3;
+            border: none;
+            color: inherit;
+            border-radius: 50%;
+        }
+
+            #header button:hover, #header a:hover {
+                background-color: #0d8cf1;
+                cursor: pointer;
+            }
+
+        #header svg {
+            width: 100%;
+            height: 100%;
+            color: inherit;
+        }
+
+        #header path {
+            fill: currentColor;
+        }
+
+    #barrier {
+        flex: 1 1 auto;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: auto;
+    }
+    /*aside*/
+    aside {
+        width: 140px;
+        bottom: 0;
+        top: 60px;
+        position: absolute;
+        background-color: #fff;
+        display: block;
+        left: -139px;
+        transition: left 1s;
+        -moz-transition: left 1s; /* Firefox 4 */
+        -webkit-transition: left 1s; /* Safari 和 Chrome */
+        -o-transition: left 1s; /* Opera */
+        z-index: 2;
+        box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+    }
+
+        aside:hover {
+            left: 0;
+        }
+
+    #webname {
+        background-color: inherit;
+        border-style: none;
+        padding: 15px 0 0 20px;
+        font-size: 1.2em;
+    }
+
+    aside ul {
+        list-style-type: none;
+        text-align: center;
+        border-style: none;
+        padding: 70% 0 70% 0;
+        font-size: 1.1em;
+    }
+
+    ul#menulist a:link {
+        text-decoration: none;
+        color: black;
+    }
+
+    ul#menulist a:hover {
+        background-color: #bc87e6;
+    }
+
+    ul#menulist, ul#menulist li, ul#menulist li a {
+        display: block;
+    }
+
+        ul#menulist li {
+            line-height: 200%;
+        }
+    /*content*/
+    #content {
+        top: 60px;
+        left: 0;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        /*justify-content: center;*/
+        align-items: center;
+    }
+    /*table*/
+    table {
+        border-spacing: 0;
+        border-collapse: collapse;
+        background-color: transparent;
+    }
+
+    .table {
+        border-collapse: collapse !important;
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+
+        .table td,
+        .table th {
+            background-color: #fff !important;
+        }
+
+        .table > thead > tr > th,
+        .table > tbody > tr > th,
+        .table > tfoot > tr > th,
+        .table > thead > tr > td,
+        .table > tbody > tr > td,
+        .table > tfoot > tr > td {
+            padding: 8px 16px 8px 16px;
+            line-height: 1.42857143;
+            vertical-align: middle;
+            border-top: 1px solid #ddd;
+        }
+
+        .table > thead > tr > th {
+            border-bottom: 2px solid #ddd;
+        }
+
+        .table > caption + thead > tr:first-child > th,
+        .table > colgroup + thead > tr:first-child > th,
+        .table > thead:first-child > tr:first-child > th,
+        .table > caption + thead > tr:first-child > td,
+        .table > colgroup + thead > tr:first-child > td,
+        .table > thead:first-child > tr:first-child > td {
+            border-top: 0;
+        }
+
+        .table > tbody + tbody {
+            border-top: 2px solid #ddd;
+        }
+
+        .table .table {
+            background-color: #fff;
+        }
+
+        .table > thead > tr > td.active,
+        .table > tbody > tr > td.active,
+        .table > tfoot > tr > td.active,
+        .table > thead > tr > th.active,
+        .table > tbody > tr > th.active,
+        .table > tfoot > tr > th.active,
+        .table > thead > tr.active > td,
+        .table > tbody > tr.active > td,
+        .table > tfoot > tr.active > td,
+        .table > thead > tr.active > th,
+        .table > tbody > tr.active > th,
+        .table > tfoot > tr.active > th {
+            background-color: #f5f5f5;
+        }
+
+        .table td {
+            text-align: center;
+        }
+
+        .table a {
+            color: inherit;
+            text-decoration: none;
+        }
+    /*content svg*/
+    #contentsvg {
+        display: flex;
+        justify-content: center;
+        width: 700px;
+        height: 400px;
+    }
+
+        #contentsvg svg {
+            width: 100%;
+            height: 100%;
+        }
+
+    #content * {
+        flex-shrink: 1;
+    }
+    /*for card*/
+    #cardcontainer {
+        height: 100%;
+        width: 100%;
+    }
+    #background {
+        height: 100%;
+        width: 100%;
+        z-index: 20;
+        display: block;
+        background-color: black;
+        opacity: 0.45;
+    }
+    #cards {
+        z-index: 21;
+        position: absolute;
+        opacity: 1;
+        top: 48px;
+        bottom: 58px;
+        left: 28%;
+        right: 28%;
+        background-color: #fff;
+        box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+    }
+
+    /*for card table*/
+    
+</style>
+<style>
+    /*for cards*/
+    #cards {
+        overflow-y: auto;
+    }
+    .card-repeat * {
+        padding: 4px 7px 3.5px 7px;
+        margin: 0px 1px 0px 1px;
+    }
+    .card-title {
+        border-bottom: groove;
+        border-width: 1px;
+        font-size: 0.95em;
+        color: #fff;
+        background-color: #33a529;
+        padding-left: 23px;
+        font-weight: 700;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .card-context-repeat {
+        font-size: 0.82em;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card-context-repeat-property-name {
+        background-color: #50b1fe;
+        color: #fff;
+        font-weight: 700;
+    }
+    .card-context-repeat-property {
+        border-style: groove;
+        border-width: 1px;
+    }
+    .card-context {
+        display: flex;
+        flex-wrap: wrap;
+    }
+</style>
+</body>
+</html>
